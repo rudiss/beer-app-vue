@@ -1,6 +1,6 @@
 <template>
   <div class="text-xs-center">
-    <v-dialog v-model="dialog" width="500">
+    <v-dialog v-model="dialog" width="80%">
       <v-btn slot="activator" color="blue lighten-2" dark>
         See more
       </v-btn>

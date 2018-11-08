@@ -3,7 +3,7 @@
     <v-content>
       <v-container>
         <Carousel />
-        <NavigationBar />
+        <!-- <NavigationBar /> -->
 
         <BeerList />
       </v-container>
