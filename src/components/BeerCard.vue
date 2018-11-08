@@ -13,7 +13,7 @@
         </v-card-title>
 
         <v-card-actions>
-          <Modal :name=name :image=image :description=description />
+          <Modal :name=name :image=image :description=description :food_pairing=food_pairing />
           <v-spacer></v-spacer>
           <v-btn icon @click="show = !show">
             <v-icon>{{ show ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</v-icon>
@@ -33,7 +33,7 @@
 <script>
   import Modal from './Modal';
   export default {
-    props: ['name', 'description', 'image', 'tagline'],
+    props: ['name', 'description', 'image', 'tagline', 'food_pairing'],
     components: {
       Modal
     },

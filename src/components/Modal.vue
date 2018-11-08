@@ -15,11 +15,17 @@
           {{ description }}
         </v-card-text>
 
-        <v-divider></v-divider>
-
-        <v-flex v-for="(food,i) in food_pairing" :key="i" xs4>
-          {{ food }}
+        <v-subheader>
+          Good with:
+        </v-subheader>
+        <div style="display: flex">
+          <v-flex v-for="(food,i) in food_pairing" :key="i">
+            <div class="text-xs-center">
+              <v-chip> {{ food }}</v-chip>
+            </div>
           </v-flex>
+        </div>
+        <br>
         <v-divider></v-divider>
 
         <v-card-actions>
