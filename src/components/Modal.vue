@@ -10,7 +10,7 @@
           {{ name }}
         </v-card-title>
         <br>
-        <v-img :src=image aspect-ratio="2" contain></v-img>
+        <v-img :src=image aspect-ratio="3" contain></v-img>
         <v-card-text>
           {{ description }}
         </v-card-text>
@@ -39,12 +39,12 @@
   </div>
 </template>
 <script>
-  export default {
-    props: ['name', 'description', 'image', 'food_pairing'],
-    data() {
-      return {
-        dialog: false,
-      };
-    },
-  };
+export default {
+  props: ['name', 'description', 'image', 'food_pairing'],
+  data() {
+    return {
+      dialog: false,
+    };
+  },
+};
 </script>

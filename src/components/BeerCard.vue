@@ -4,7 +4,8 @@
       <v-card min-height="400" max-height="500" hover style="cursor:default">
         <v-img contain :src=image height="200px">
         </v-img>
-
+        <v-progress-circular indeterminate color="primary" 
+        style=" position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);"></v-progress-circular>
         <v-card-title primary-title>
           <div>
             <div class="headline">{{ name | truncate(15, '...')}}</div>
@@ -21,7 +22,7 @@
         </v-card-actions>
 
         <v-slide-y-transition>
-          <v-card-text  v-show="show">
+          <v-card-text v-show="show">
             {{ description | truncate(70, '...')}}
           </v-card-text>
         </v-slide-y-transition>
@@ -32,13 +33,15 @@
 
 <script>
   import Modal from './Modal';
+  import Vue from 'vue';
+
   export default {
     props: ['name', 'description', 'image', 'tagline', 'food_pairing'],
     components: {
-      Modal
+      Modal,
     },
     data: () => ({
-      show: false
-    })
+      show: false,
+    }),
   };
 </script>
