@@ -4,8 +4,8 @@
       <v-card min-height="400" max-height="500" hover style="cursor:default">
         <v-img contain :src=image height="200px">
         </v-img>
-        <v-progress-circular indeterminate color="primary" 
-        style=" position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);"></v-progress-circular>
+        <!-- <v-progress-circular indeterminate color="primary" v-if="loading"
+          style=" position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);"> </v-progress-circular> -->
         <v-card-title primary-title>
           <div>
             <div class="headline">{{ name | truncate(15, '...')}}</div>
